@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg_alu</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5"><img class="img-responsive" src="assets/img/LogoLargoUniva.jpg"></div>
+            <div class="col-md-4">
+                <h2 class="text-center">Sistema de Asesorias</h2></div>
+            <div class="col-md-3">
+                <h3 class="text-center">Bienvenido </h3></div>
+            <div class="col-md-3">
+                <header></header>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Registro de Alumnos</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form class="form-horizontal" action="ins_alu.php" method="post" enctype="multipart/form-data">
+                    <label>Matricula </label>
+                    <input class="form-control" type="text" name="matricula" placeholder="Matricula del alumno" maxlength="10" autocomplete="on" inputmode="kana">
+                    <label>Carrera </label>
+                    <input class="form-control" type="text" name="carrera" placeholder="Carrera del alumno" maxlength="10" autocomplete="on" inputmode="kana">
+
+                    <label>Nombre </label>
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombe del alumno">
+                    <label>Ap. Paterno</label>
+                    <input class="form-control" type="text" name="appat" placeholder="Apellido Paterno">
+                    <label>Ap. Materno</label>
+                    <input class="form-control" type="text" name="apmat" placeholder="Apellido Materno">
+                    <label>Correo Electronico</label>
+                    <input class="form-control" type="email" name="email" placeholder="Correo">
+                    <input type="submit"  class="btn btn-primary">
+                    <a class="btn btn-danger" href="index.html">Cancelar</a>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

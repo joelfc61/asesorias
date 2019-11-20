@@ -1,0 +1,121 @@
+El sistema mostrará una pantalla principal en la cual indicará 
+lo que  la página web le ayudará.
+
+Tendrá una opción para  ingresar, con la cual le solicitará su matricula, 
+en caso de estar registrado, se le solicitará la constraseña.
+Una vez autentificado, se le mostrará el menú con el proceso  y la bienvenida
+mostrando sus datos
+
+
+Si no está registrado, se le solicitará su nombre, appat y apmat asi como un mail activo
+
+Cuando se registre, se le enviará un mail con la contraseña generada
+Esta contraseña puede ser utilizada siempre  pero se le recomendará en cada acceso que la cambie.
+
+Cuando solicita cita para un profesor, aparecerán los dias en los que el profesor tiene
+disponibilidad asi como las horas que asignará a  asesorias. El profesor podrá cambiar estos horarios
+y los dias.
+
+Cuando un alumno solicita una cita y se registra, se le enviará un mail al profesor solicitado 
+indicándole la fecha/hora  para que se confirme
+
+Cuando se lleva a cabo la asesoria el profesor registra  que se cumplió  o que no se llevó a cabo.
+
+Si se cumplió, se le mandará un mail al alumno para que diga sus comentarios.
+
+Mientras el alumno no genere esta comentario, no se le podrá dar permiso de otra asesoria.
+
+El profesor podrá entrar para ver las asesorias que tiene programadas.
+
+Podrá asignar fechas y horarios que se publicarán
+
+No podrá cancelar una hora para la cual ya existe una cita solicitada.
+
+Al seleccionar un profesor  aparecerá la  foto  del profe  asi como  solamente se podrá seleccionar
+las fechas y las horas que tiene poblicadas.
+
+No se  puede solicitar una asesoria para el dia actual, solamente aparecerán disponibles a partir del
+dia siguiente al del acceso. Esto para que el maestro  pueda consultar con tiempo
+
+Los  maestros interesados podrán registrarse y como requisito será enviar una fotografia de width x height
+especificos   y poder indicar de que materias puede dar asesoria asi como dias y horarios que ofrecen
+
+El sistema podrá entregar un reporte de las asesorias realizadas por cada profesor registrado, asi como
+aquellas asesorias que tenía programadas y  no llegó ya sea el  o el alumno.
+
+Si el alumno no llegó, en cuanto se registra el hecho, se le envía un mail al alumno para que reagende
+y si reincide en no asistir, quedará cancelado su  registro.
+
+Se enviará  un email por cada  alumno que se registre al sistema.
+
+
+--------------
+Tabla Alumnos
+--------------
+idalumno PK
+matricula
+nombre
+appat
+appmat
+email          ---utilizado para login
+password
+status  activo, se desactiva si no califica una asesoria recibida y ya pasò una semana
+                No puede solicitar otra asesoria si no ha calificado la ultima 
+                Para tener derecho a una asesoria, o es la primera o debe haber calificadola ultima
+
+---------------
+Tabla Maestros
+---------------
+idmaestro  PK
+nombre    
+appat
+apmat
+email      
+password 
+LugarAsesoria  cubiculo, salon, lab, etc
+
+---------------
+materia-maestro
+---------------
+idmateria PK
+idmaestro PK
+fechainicio
+
+-------------
+materias
+-------------
+idmateria PK
+descripcion
+carrera
+cuatrimestre
+
+---------------------
+HorariosDisponibles
+---------------------
+idhorario PK
+idmaestro FK
+fecha          dd/mm/aaaa  publicadas por el maestro, por mes o resto de mes.
+hora           hh:mm   
+status No Disponible,Disponible, Pendiente (con cita), Atendido
+
+-----------
+solicitudes
+-----------
+idsolicitud PK
+fechasolicitud  --fecha del tramite de la solicitur
+idalumno   FK      --alumno solicitante
+idmateria  FK     --materia tema de asesoria
+idhorario  FK     --dia/hora 
+descripcion     --Tema del que se solicita asesoria
+atendida        --default es No, el maestro la pone en Si, y con ello se manda un mail al alumno para calificar
+comentarios     --comentarios de la asesoria, 
+calificada      --default es No, cambia a SI cuando el alumno pone su comentario
+
+
+Se podra obtener reportes de:
+-asesorias realizadas por maestro en rango de fechas  y sus comentarios
+-asesorias recibidas por cada alumno
+-asesorias solicitadas contra realizadas  y calificadas
+-asesorias realizadas por materia
+
+Poder extender a otras carreras
