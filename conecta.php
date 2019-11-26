@@ -1,4 +1,4 @@
-<?
+<?php
 $datos= parse_ini_file("config.ini",TRUE);
 //echo "Se va a conectar a: ".$datos[BD][SERVER].",".$datos[BD][USER].",".$datos[BD][PASS].",".$datos[BD][DBNAME]."<BR>";
 $mysqli = new mysqli($datos['BD']['SERVER'],$datos['BD']['USER'],$datos['BD']['PASS'],$datos['BD']['DBNAME']);
