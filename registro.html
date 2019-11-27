@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg_alu</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <style>
+       .opciones{
+          padding: 40px;
+       }
+
+       .container{
+        background-color: lightgrey;
+       }
+      #tipousr{
+           color:  blue;
+           width: 250px;
+           font-size: 20px;
+           display: inline;
+           border: 2px solid blue;  
+           padding: 15px; 
+           margin: 150px;
+           border-radius: 10px;
+           text-align: center;
+      }
+
+      #botones{
+        margin: 20px;
+        text-align: center;
+      }
+
+    </style>
+    <script>
+      function ocultax(){
+        document.getElementById('lblmatricula').style.display="none";
+        document.getElementById('matricula').style.display="none";
+        document.getElementById('lblcelular').style.display="none";
+        document.getElementById('celular').style.display="none";
+        document.getElementById('ubicacion').style.display="block";
+        document.getElementById('lblubicacion').style.display="block";
+        document.getElementById('lblareasapoyo').style.display="block";
+        document.getElementById('areasapoyo').style.display="block";
+      }
+      function muestrax(){
+        document.getElementById('matricula').style.display= "block";
+        document.getElementById('lblmatricula').style.display= "block";
+        document.getElementById('lblcelular').style.display= "block";
+        document.getElementById('celular').style.display= "block";
+        document.getElementById('lblubicacion').style.display= "none";
+        document.getElementById('ubicacion').style.display= "none";
+        document.getElementById('lblareasapoyo').style.display= "none";
+        document.getElementById('areasapoyo').style.display= "none";
+      }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="assets/img/LogoLargoUniva.jpg">
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center">Sistema de Asesorias</h2>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-center"> Bienvenido </h3>
+            </div>
+           
+        </div>
+        <hr width="80%">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Registro </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div id="forma" class="col-md-6">
+
+                <form class="formx" action="ins_alu.php" method="post" enctype="multipart/form-data">
+                    <div id="tipousr">
+                      <input type="radio" name="tipo" class="opciones" value="alumno" onclick="muestrax();" checked>Alumno
+                      <input type="radio" name="tipo" class="opciones" value="maestro" onclick="ocultax();"> Maestro<br>
+                    </div><br>
+                    <label id="lblmatricula">Matricula </label>
+                    <input class="form-control" type="text" id="matricula" name="matricula" placeholder="Matricula del alumno" maxlength="10" autocomplete="on" inputmode="kana">
+                    
+                    <label>Nombre </label>
+                    <input class="form-control" type="text" name="nombre" placeholder="Nombre " required>
+                    <label>Ap. Paterno</label>
+                    <input class="form-control" type="text" name="appat" placeholder="Apellido Paterno">
+                    <label>Ap. Materno</label>
+                    <input class="form-control" type="text" name="apmat" placeholder="Apellido Materno"><br>
+                    <label>Carrera </label>
+                    <select name="carrera" placeholder="Carrera del alumno">
+                    <option value="LISTI">Ingeniería en Sistemas y Tecnolgías de Información </option>
+                    <option value="ISC">Ingeniería en Sistemas Computacionales</option>
+                    <option value="IM">Ingeniería Mecatrónica</option>
+                    </select><br><br>
+                    <label>Correo Electronico</label>
+                    <input class="form-control" type="email" name="email" placeholder="Correo">
+                    <label id="lblcelular">Celular</label>
+                    <input class="form-control" type="text" id="celular" name="celular" placeholder="Num.Celular">
+                    <label id="lblubicacion" style="display:none">Ubicacion</label>
+                    <input class="form-control" type="text" id="ubicacion" name="ubicacion" placeholder="Ubicacion" style="display:none">
+                    <label id="lblareasapoyo" style="display:none">Areas de Apoyo</label>
+                    <textarea class="form-control rows="5" cols="40" id="areasapoyo" name="areasapoyo" placeholder="Areas de apoyo" style="display:none">
+                    </textarea>
+                    <input type="checkbox" name="prucheck">
+
+                    <div id="botones">
+                      <input type="submit"  class="btn btn-primary">
+                      <a class="btn btn-danger" href="index.html">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

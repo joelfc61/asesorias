@@ -2,8 +2,6 @@
 
 include "conecta.php";
 include "debugger.php";
-$sql = "select * from tblalumnos";
-
  
   $matr = $_POST['matricula'];
   $nom =  $_POST['nombre'];
@@ -21,31 +19,31 @@ $sql = "select * from tblalumnos";
   else
     $checado="no";
 
+  $partes = explode("@", $mai);
+  pDebug($partes[0]);
 
-  $pwd = sha1($mai);
+  $pwd = sha1($partes[0]."Pwd");
   pDebug($carr."  ".$tipo."  ".$pwd." ".$checado." ".$tipo);
 
 //Mat.: $am Mail: $mai  Passwd: $pwd<br>";
   if($nom && $ap && $am && $mai) {
-    if($tipo =='alumno'){
-     $sInsAlu = "insert into tblalumnos(matricula,nombre,appat,apmat,email,password,status,cambiar_password,carrera,numcelular,fecharegistro) 
+     if($tipo =='alumno'){
+       $sInsAlu = "insert into tblalumnos(matricula,nombre,appat,apmat,email,password,status,cambiar_password,carrera,numcelular,fecharegistro) 
                                    values('$matr','$nom','$ap','$am','$mai','$pwd',1,1,'$carr','$cel',now())";
-   }
+       $mysqli->query($sInsAlu);
+       echo "<script language='javascript'>alert('Alumno Guardado con Exito!!!');</script>";
+     }
     else {
-     $sInsAlu = "insert into tblMaestros(nombre,appat,apmat,email,password,status,cambiopwd,ubicacion,areasapoyo,fechareg) 
+     $sInsMtro = "insert into tblMaestros(nombre,appat,apmat,email,password,status,cambiopwd,ubicacion,areasapoyo,fechareg) 
                                        values('$nom','$ap','$am','$mai','$pwd',1,1,'$cubic','$areas',now())";  
-   }
-   pDebug($sInsAlu);
+     $mysqli->query($sInsMtro);      
+     echo "<script language='javascript'>alert('Maestro Guardado con Exito!!!');</script>";
+    }
+    pDebug($sInsAlu);
 
-
-  
-     // echo "<br>$sInsAlu<br>";
-  //   $res = $mysqli->query($sInsAlu);
-     //echo "Resultado: $res";
-    // echo $sInsAlu."<br>";
-     echo "<script language='javascript'>alert('Alumno Guardado con Exito!!!'+$sInsAlu);</script>";
+    
   }
-  echo '<script language="javascript">location.href=\'acceso_alu.html\';</script>';   
+  echo '<script language="javascript">location.href=\'acceso.html\';</script>';   
 
 
 ?>
