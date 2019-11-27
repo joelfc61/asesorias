@@ -13,3 +13,5 @@ Joel maestro
 select * from tblalumnos where email='joel.flores@univa.mx'
 select * from tblmaestros where email='joel.flores@univa.mx'
 Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno

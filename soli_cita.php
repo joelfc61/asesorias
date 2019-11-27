@@ -23,10 +23,7 @@
             <div class="col-md-4">
                 <h2 class="text-center">Sistema de Asesorias</h2>
             </div>
-            <div class="col-md-3">
-                <h3 class="text-center">Bienvenido </h3>
-                <?echo "<h3 class='text-center alert alert-danger'>". $_SESSION['usuario'] ." </h3>"; ?>
-            </div>
+            
             <div class="col-md-3">
                 <header></header>
             </div>
