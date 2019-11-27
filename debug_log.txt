@@ -1,0 +1,15 @@
+select * from tblalumnos where email='martha@hotmail.com'
+select * from tblmaestros where email='martha@hotmail.com'
+select * from tblalumnos where email='ramon.castillo@univa.mx'
+select * from tblmaestros where email='ramon.castillo@univa.mx'
+Ramon maestro
+select * from tblalumnos where email='diego.ruelas@gmail.com'
+select * from tblmaestros where email='diego.ruelas@gmail.com'
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro

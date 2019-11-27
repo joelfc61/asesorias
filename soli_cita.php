@@ -6,7 +6,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>soli_cita</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <?
        include "conecta.php";
     ?>
-    <div class="container">
+    <div class="container" style="margin-top: 40px;">
         <div class="row">
             <div class="col-md-5"><img class="img-responsive" src="assets/img/LogoLargoUniva.jpg"></div>
             <div class="col-md-4">
@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-3">
                 <h3 class="text-center">Bienvenido </h3>
-                <?echo "<h3 class='text-center alert alert-danger'>". $_SESSION['alumno'] ." </h3>"; ?>
+                <?echo "<h3 class='text-center alert alert-danger'>". $_SESSION['usuario'] ." </h3>"; ?>
             </div>
             <div class="col-md-3">
                 <header></header>

@@ -16,7 +16,7 @@ $tipo = $_SESSION['tipo'];
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="margin-top: 40px;">
         <div class="row">
             <div class="col-md-5"><img class="img-responsive" src="assets/img/LogoLargoUniva.jpg"></div>
             <div class="col-md-4">
