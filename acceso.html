@@ -6,38 +6,97 @@
     <title>acceso_alu</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
+    <style>
+
+      *{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+
+   }
+
+body{
+    background: #DEDEDE;
+    display: flex;
+    min-height: 100vh;
+}
+
+form{
+    margin: auto;
+    width:90%;
+    max-width: 500px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.5);
+}
+input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+}
+input[type="submit"]{
+    background: linear-gradient(#FFDA63,#FFB940);
+    border: 0;
+    color: blue;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+input[type="submit"]:hover{
+    opacity: 1;
+}
+
+input[type="submit"]:active{
+   transform: scale(0.95);
+}
+
+    </style>
 </head>
 
 <body>
     <div class="container" style="margin-top: 40px;">
         <div class="row">
-            <div class="col-md-5"><img class="img-responsive" src="assets/img/LogoLargoUniva.jpg"></div>
+            <div class="col-md-5">
+                <img class="img-responsive" src="assets/img/LogoLargoUniva.jpg">
+            </div>
             <div class="col-md-4">
                 <h2 class="text-center">Sistema de Asesorias</h2></div>
             <div class="col-md-3">
-                <h3 class="text-center"> </h3></div>
-            <div class="col-md-3">
-                <header></header>
+                <h3 class="text-center"> </h3>
             </div>
+            
         </div>
+
         <hr>
+       
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Acceso al Sistema</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                
+            </div>
             <div class="col-md-6">
-                <form class="form-horizontal" action="valida_alu.php" method="post" enctype="multipart/form-data">
-                    <label>Correo Electronico</label>
-                    <input class="form-control" type="email" name="email" placeholder="Correo">
-                    <label>Contraseña </label>
-                    <input class="form-control" type="password" name="password" placeholder="Contraseña">
-                    <button class="btn btn-primary" type="submit">Acceso </button>
-                    <a class="btn btn-default" role="button" href="registro.html">Registro</a><a class="btn btn-default" role="button" href="menu_admin.html">Enviar Admin </a>
+                <form  action="valida_alu.php" method="post" enctype="multipart/form-data" >
+                    <h1 >Acceso al Sistema</h1>
+                    <input class="form-control" type="email" name="email" placeholder="&#128272 Correo Electrónico">
+                   
+                    <input class="form-control" type="password" name="password" placeholder="&#128272 Contraseña">
+                    <button class="btn btn-success" type="submit" >Acceso </button>
+                    <a class="btn btn-primary" role="button" href="registro.html" style="margin:20px">Registro</a>
+                    <a class="btn btn-default" role="button" href="menu_admin.html">Admin </a>
                 </form>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                
+            </div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>

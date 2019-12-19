@@ -15,3 +15,70 @@ select * from tblmaestros where email='joel.flores@univa.mx'
 Joel maestro
 select * from tblalumnos where email='diego.ruelas@live.com'
 Diego alumno
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email=''
+select * from tblmaestros where email=''
+select * from tblalumnos where email='fdsfsddsf@dasdasdas.com'
+select * from tblmaestros where email='fdsfsddsf@dasdasdas.com'
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro
+select * from tblalumnos where email='diego.ruelas@live.com'
+Diego alumno
+select * from tblalumnos where email='diego.ruelas@live.com'
+select * from tblmaestros where email='diego.ruelas@live.com'
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+select * from tblalumnos where email='diego.ruelas@live.com'
+select * from tblmaestros where email='diego.ruelas@live.com'
+select * from tblalumnos where email='joel.flores@univa.mx'
+select * from tblmaestros where email='joel.flores@univa.mx'
+Joel maestro

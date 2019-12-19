@@ -43,12 +43,12 @@ $tipo = $_SESSION['tipo'];
                     <label>Confirmar </label>
                     <input class="form-control" type="password" placeholder="Confirmar">
                     <?php if ($tipo=="alumno") { ?>
-                    <a class="btn btn-primary" role="button" href="menu_alu.php">Cambiar </a>
-                    <a class="btn btn-info" role="button" href="menu_alu.php">Cancelar </a>
+                    <a class="btn btn-primary" role="button" href="menu_alu.php" style="margin:20px">Cambiar </a>
+                    <a class="btn btn-info" role="button" href="menu_alu.php" style="margin:20px">Cancelar </a>
                     <?php } ?> 
                     <?php if ($tipo=="maestro") { ?>
-                    <a class="btn btn-primary" role="button" href="menu_mtro.php">Cambiar </a>
-                    <a class="btn btn-info" role="button" href="menu_mtro.php">Cancelar </a>
+                    <a class="btn btn-primary" role="button" href="menu_mtro.php" style="margin:20px">Cambiar </a>
+                    <a class="btn btn-info" role="button" href="menu_mtro.php" style="margin:20px">Cancelar </a>
                     <?php } ?> 
                     
                </form>

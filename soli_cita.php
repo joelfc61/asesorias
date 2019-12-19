@@ -80,8 +80,10 @@
                             
                             </select>
                             <label>Descripción Motivo</label>
-                            <textarea class="form-control"></textarea>
-                            <a class="btn btn-primary" role="button" href="menu_alu.php">Enviar </a></form>
+                            <textarea class="form-control" cols="100" rows="10"></textarea>
+                            <a class="btn btn-primary" role="button" href="menu_alu.php" style="margin:20px">Enviar </a>
+                            <a class="btn btn-info" role="button" href="menu_alu.php">Cancelar </a>
+                        </form>
                     </div>
                 </div>
             </div>
